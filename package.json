@@ -1,5 +1,5 @@
 {
-  "name": "next-tw-eslint-prettier-start",
+  "name": "next-story-24",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,10 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint \"./app/**/*.{js,ts,tsx}\" --quiet",
-    "fix": "eslint \"./app/**/*.{js,ts,tsx}\" --fix"
+    "fix": "eslint \"./app/**/*.{js,ts,tsx}\" --fix",
+    "sb": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.447.0",
@@ -21,6 +25,15 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.9.0",
+    "@storybook/addon-essentials": "^8.3.5",
+    "@storybook/addon-interactions": "^8.3.5",
+    "@storybook/addon-links": "^8.3.5",
+    "@storybook/addon-onboarding": "^8.3.5",
+    "@storybook/blocks": "^8.3.5",
+    "@storybook/nextjs": "^8.3.5",
+    "@storybook/react": "^8.3.5",
+    "@storybook/test": "^8.3.5",
     "@types/node": "^22.7.4",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.0",
@@ -35,9 +48,16 @@
     "eslint-plugin-promise": "^7.1.0",
     "eslint-plugin-react": "^7.37.1",
     "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-storybook": "^0.9.0",
     "postcss": "^8.4.47",
     "prettier": "^3.3.3",
+    "storybook": "^8.3.5",
     "tailwindcss": "^3.4.13",
     "typescript": "^5.6.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
   }
 }
