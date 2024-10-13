@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button/button";
 
 const Home = () => (
   <main className="flex min-h-screen flex-col items-center p-12">

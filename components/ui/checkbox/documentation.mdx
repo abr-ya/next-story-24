@@ -1,0 +1,37 @@
+import {Meta, Title, Description, Story, Controls, Canvas, Unstyled} from '@storybook/blocks';
+import {CodeOrSourceMdx, Source} from "@storybook/addon-docs";
+import * as CheckBoxStories from './checkbox.stories.tsx';
+
+<Meta of={CheckBoxStories} />
+
+<Title>Checkbox</Title>
+<Description>Description</Description>
+    <CodeOrSourceMdx>Checkbox</CodeOrSourceMdx> == a control that allows the user to toggle between checked and not checked.
+
+    <Canvas of={CheckBoxStories.Default} />
+    <Controls of={CheckBoxStories.Default} />
+
+    ## Installation
+    <Source code={`npx shadcn-ui add checkbox`} dark/>
+
+    ## Usage
+    <Source code={'import { Checkbox } from "@/components/ui/checkbox"'} dark/>
+    <Source code={'<Checkbox />'} dark/>
+ 
+    ## Stories
+    ### Enabled
+    <Canvas of={CheckBoxStories.Default} />
+    ### Disabled
+    <Canvas of={CheckBoxStories.Disabled} />
+    ### Checked
+    <Canvas of={CheckBoxStories.Selected} />
+
+    ## Examples
+    ToDo: Add more complex examples?!
+
+<br/>
+> > More documentation **[Checkbox](https://ui-private.shadcn.com/docs/components/checkbox)**
+<br />
+
+### Controls
+<Controls />
